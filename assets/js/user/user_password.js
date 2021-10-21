@@ -37,9 +37,9 @@ $(function () {
             data: $(this).serialize(),
             success: function (res) {
                 if(res.status !== 0) {
-                    return layui.layer.msg("更新密码失败！")
+                    return layer.msg("更新密码失败！")
                 }   
-                layui.layer.msg("更新密码成功！")
+                layer.msg("更新密码成功！")
 
                 // 同时刷新重置表单
                 // $(".layui-form")[0] 获取他的原生dom对象，再利用form表单的reset属性重置
